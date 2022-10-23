@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Escritura Bilbo';
+    src: url('./fuente/hobbitonbrushhand.ttf');
+}
+@font-face{
+    font-family: 'Lengua Negra';
+    src: url('./fuente/lenguaNegra/tnganbi.ttf');
+}
+body{
+    background: black;
+}
+header{
+    background: url(./imagenes/ringofsauron.jpg);
+    background-position: top;
+    box-shadow: 0px 0px 5px 12px black inset;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.titulo h1{
+    color: #f1f1f1;
+}
+.navegacion{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0 0 15px white);
+    border: solid 2px rgba(255, 255, 225, 0.6);
+    border-radius: 10px;
+    z-index: 1;
+}
+.opciones{
+    position: relative;
+    text-decoration: none;
+    color: #fae8da;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(224, 163, 133, 0.6);
+    border-radius: 5px;
+}
+.opciones:hover{
+    border-radius: 5px;
+    background-color: rgba(173, 69, 18, 1);
+    filter: drop-shadow(0 0 10px brown);
+    transition: 0.4s ease-out;
+}
+.logo{
+    width: 100px;
+    margin: 0;
+    filter: drop-shadow(0 0 10px green);
+}
+.logo img{
+    position: relative;
+    display: block;
+    width: 50%;
+}
+.container-fluid{
+    background-color: #4b4242;
+}
+.lista{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.2);
+    width: 80%;
+}
+@media screen and (max-width:800px){
+    .lista{
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 5%;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(211, 211, 211, 0.2);
+        width: 80%;
+    }
+    .indice{
+        font-size: 35px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: double grey;
+        filter: drop-shadow(0 0 2px grey);
+        padding: 10px 0 3px;
+        color: rgb(143, 22, 22);
+        vertical-align: baseline;
+    }
+}
+.cajaindice{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.indice{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: double grey;
+    filter: drop-shadow(0 0 2px grey);
+    margin: 0;
+    margin-right: 50%;
+    padding: 10px 0 3px;
+    color: white;
+    vertical-align: baseline;
+}
+.listaindice{
+    list-style-type: disc;
+    margin: 6px 0 18px 36px;
+    list-style: none;
+}
+.per-list{
+    align-items: center;
+    break-inside: avoid;
+    display: flex;
+    margin: 0;
+    padding: 9px 0;
+}
+.div-img{
+    display: flex;
+    float: left;
+    align-items:center;
+    width: 50px;
+}
+.imagen-indice{
+    border: 1px solid #4f4f4f;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 50px;
+    vertical-align: middle;
+}
+.link-nombre{
+    padding-left: 12px;
+    line-height: initial;
+    color: #6c93b1;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+.link-nombre-malos{
+    padding-left: 12px;
+    font-family: 'Lengua Negra';
+    line-height: initial;
+    color: #6c93b1;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+.link-nombre:hover{
+    color: green;
+}
+.link-nombre-malos:hover{
+    color: yellow;
+}
+.seccion{
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: url(./imagenes/berenyluthien.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.articulo{
+    width: 70%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.articulo h2{
+    font-family: 'Escritura Bilbo';
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+.articulo h3{
+    text-align: left;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+}
+.articulo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: goldenrod;
+}
+.imagen{
+    border-radius: 5px;
+}
+.reuel{
+    float: left;
+    margin: 0px 10px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 5px white);
+}
+.presentacion{
+    padding-left: 10px;
+    line-height: 1.6;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+}
+.presentacion::first-letter{
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+}
+.sup{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 100%;
+    align-items: center;
+    display: grid;
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: #4b4242;
+}
+.pers_contenedor{
+    padding: 25px;
+    margin: 5px;
+    margin-bottom: 35px;
+    margin-right: 25px;
+    background-color: rgba(17, 8, 8, 0.7);
+    border-radius: 5px;
+}
+.listaNombre{
+    color: white;
+    list-style: none;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(0 0 3px green);
+}
+.titulo_personaje{
+    padding-left: 5px;
+    font-family: 'Escritura Bilbo';
+    font-size: 65px;
+    color: white;
+    filter: drop-shadow(0 0 2px white);
+}
+.frasePersonaje{
+    padding-left: 35px;
+    padding-top: 15px;
+    font-size: 25px;
+    color: rgb(216, 216, 88);
+}
+.desc_personaje{
+    padding-left: 10px;
+    line-height: 1.6;
+    font-size: inherit;
+    font-family: rubik,helvetica,arial,sans-serif;
+    color: white;
+    
+}
+.desc_personaje +p::first-letter{
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+}
+.asidePersonaje{
+    width: 225px;
+    height: auto;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    background-color: lightblue;
+    clear: right;
+    margin: 0 0 18px 18px;
+    border-radius: 10px;
+}
+.imagenAside{
+    width: 100%;
+    border-radius: 10px;
+}
+.asidePersonaje h2{
+    text-align: center;
+    background-color: #4fb15f;
+}
+.asidePersonaje h3{
+    border-bottom: 0;
+    font-family: inherit;
+    font-weight: 700;
+    margin: 0;
+}
+.infoBio{
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-style: none;
+    margin-bottom: 0;
+    overflow: auto;
+}
+.familiaLista{
+    margin: 0 0 0 15px;
+    font-size: 15px;
+    text-align:left;
+    list-style: none;
+}
+.nacimiento{
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #313131;
+    grid-column-gap: 9px;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: left;
+    border-top: 0;
+}
+.nacimiento h3{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.nacimiento div{
+    flex-basis: 180px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+}
+.muerte{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: darkslategray;
+    grid-column-gap: 9px;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    vertical-align: baseline;
+}
+.muerte h3{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.muerte div{
+    flex-basis: 180px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0;
+}
+.form-label{
+    color: lightblue;
+    font-size: 25px;
+}
+.cons{
+    color: white;
+}
+.general{
+    display: flex;
+    flex-direction: column;
+}
+.pie{
+    background-color: #3d3d3d;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+.pie h2{
+    color: #6c93b1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dereChos{
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.dereChos h2{
+    color: lightblue;
+}
+.dereChos i{
+    font-size: 0.5rem;
+}
+.alumnos{
+    flex-direction: column;
+    padding-left: 15px;
+}
+.alumnos h3{
+    color: #1da1f2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.pie div{
+    display: flex;
+}
+.link {
+    text-decoration: none;
+    color: #b7b7b7;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.4s;
+}
+.link:hover {
+    transform: rotate(45deg);
+}
+.link::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #373737;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+}
+
+.link:hover::before {
+    opacity: 0.4;
+}
+
+.link:nth-child(1)::before {
+    background: #c32aa3;
+}
+
+.link:nth-child(2)::before {
+    background: #1da1f2;
+}
+
+.link:nth-child(3)::before {
+    background: #25d366;
+}
+
+.link:nth-child(4)::before {
+    background: #0a66c2;
+}
+
+.link:hover::before {
+    transform: translate(-4px, -4px);
+    filter: blur(10px);
+}
+
+.link i {
+    font-size: 1.7em;
+    transition: all 0.4s;
+}
+
+.link:hover i {
+    color: #c8c8c8;
+    transform: rotate(-45deg);
+}
+
+.link:hover i.instagram {
+    color: #c32aa3;
+}
+
+.link:hover i.twitter {
+    color: #1da1f2;
+}
+
+.link:hover i.whatsapp {
+    color: #25d366;
+}
+
+.link:hover i.linkedin {
+    color: #0a66ca;
+}
+@media screen and (max-width:800px){
+    .pie{
+        background-color: #3d3d3d;
+        display: grid;
+        grid-template-columns: auto;
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    .dereChos{
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .pie{
+        background-color: #3d3d3d;
+        display: grid;
+        grid-template-columns: auto;
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    .dereChos{
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+}
